@@ -1,6 +1,6 @@
 /* VARIABLES */
 
-:root{
+:root {
   /* --main-text-color : #fff; */
   /* --main-bg-color : #fff; */
   /* --main-font-size : 16px; */
@@ -10,28 +10,27 @@
 
 /* GENERAL */
 
-html{
+html {
   height: 100%;
   box-sizing: border-box;
 }
 
-img{
+img {
   display: block;
   height: auto;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
+  font-family: "Roboto", "Arial", sans-serif;
   /* font-size: 16px; */
   /* font-weight: 400; */
   /* line-height: var(--main-line-height); */
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -48,8 +47,8 @@ body{
 
 /* CONTAINER */
 
-.container{
-  /* max-width: your-size-here; */
+.container {
+  max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -57,8 +56,105 @@ body{
 }
 
 /* STICKY-FOOTER */
-.site-main{
+.site-main {
   flex-grow: 1;
 }
 
+.rabota {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.rabota__big-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rabota__big-text {
+  min-width: 220px;
+  margin: 0;
 
+  font-size: 16px;
+  font-weight: 700;
+}
+.rabota__line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #808080;
+}
+.rabota__big-text::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #808080;
+}
+.rabota__roznitsu-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+.rabota__roznitsu-text {
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.rabota__button {
+  margin-right: 10px;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 5px;
+  background: #dbdee7;
+}
+.rabota__button-span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff5915;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ff5915;
+}
+.rabota__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+}
+.rabota__item {
+  display: block;
+  margin-right: 15px;
+  max-width: 230px;
+  display: flex;
+  justify-content: center;
+}
+.rabota__item-strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rabota__item::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 5px;
+  background-image: url("/images/icons8-rocket-32.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rabota__item:not(:nth-child(4))::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  margin-top: 20px;
+
+  background-color: #808080;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
